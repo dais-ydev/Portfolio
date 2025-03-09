@@ -1,0 +1,228 @@
+:root {
+  /* Background Colors */
+  --color-bg: #121212;
+  --color-header-footer: #1A1A1A;
+  --color-section: #232323;
+
+  /* Text Colors */
+  --color-text-primary: #EAEAEA;
+  --color-text-secondary: #A0A0A0;
+
+  /* Accent Colors */
+  --color-accent-primary: #00E5FF;
+  --color-accent-secondary: #A854F5;
+
+  /* Buttons */
+  --color-btn-primary: #00E5FF;
+  --color-btn-hover: #5CFFFF;
+
+  /* Other */
+  --color-link: #C580FF;
+  --color-success: #2EC27E;
+  --color-error: #FF4C4C;
+  overflow-x: hidden;
+
+}
+header{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 65px;
+  background-color: var(--color-header-footer);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+body{
+  background-color: var(--color-bg);
+  overflow-x: hidden;
+}
+
+.hero.tbl{
+  display: none;
+}
+
+/* .hero *{
+  border: 1px solid white;
+} */
+
+.hero{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  height: auto;
+  display: flex;
+  padding: 50px;
+}
+
+
+.profile-vertical-wrap{
+  width: 30%;
+  height: 100%;
+  display: flex;
+
+}
+
+.profile-vertical-wrap img{
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+
+}
+
+.general-info{
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.general-info span{
+  color: var(--color-accent-secondary);
+}
+
+.about-me, .contact, .skill{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+.about-me{
+  padding-right: 0px;
+}
+
+.hero h2{
+  font-size: 2.4rem;
+  color: var(--color-accent-primary);
+}
+
+.contact-skill{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  padding-right: 0px;
+}
+
+.contact{
+  width: 50%;
+  height: auto;
+}
+
+.skill{
+  width: 70%;
+  height: auto;
+  padding-right: 0px;
+}
+
+.contact ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact ul li i{
+  color: var(--color-accent-secondary);
+  margin-right: 10px;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+@media (max-width: 1024px) {
+  .hero{
+    display: none;
+  }
+  .hero.tbl{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-vertical-wrap{
+    display: flex;
+    width: 100%;
+  }
+
+  .profile-vertical-wrap img{
+    display: flex;
+    width: 30%;
+  }
+
+  .general-info{
+    display: flex;
+    width: 100%;
+  }
+
+  .contact{
+    width: max-content;
+  }
+
+  .skill{
+    width: 55%;
+  }
+}
+
+@media (max-width: 500px) {
+  html{
+    font-size: 10px;
+  }
+  span{
+    color: var(--color-accent-secondary);
+  }
+  .hero{
+    display: none;
+  }
+  .hero.tbl{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .profile-vertical-wrap{
+    display: flex;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .profile-vertical-wrap img{
+    display: none;
+    width: 30%;
+  }
+
+  .general-info{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+  }
+
+  .contact-skill{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact, .skill, .about-me{
+    width: 100%;
+    padding: 0;
+  }
+
+}
