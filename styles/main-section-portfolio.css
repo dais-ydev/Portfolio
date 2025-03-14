@@ -180,7 +180,7 @@ header {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 400px) {
   .vsl ul li, .testimonial ul li {
     width: calc(100% - 0px); /* Two videos per row */
     list-style: none;
