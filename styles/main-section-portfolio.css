@@ -188,10 +188,10 @@ header {
   }
 
   .vertical ul li{
-    width: calc(100% - 0px); /* Two videos per row */
+   width: 100%;
   }
   .square ul li {
-    width: calc(100% - 0px);
+    width: 100%;
     list-style: none;
   }
 
